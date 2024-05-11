@@ -1,0 +1,588 @@
+html {
+    box-sizing:border-box;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+/* Homepage */
+.mission{
+    font-family: "komet", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    color: white;
+}
+.statSocial{
+    display: grid;
+    grid-template-columns: 800px 200px;
+    grid-gap: 10px;
+    position: relative;
+    left: 17%;
+    top: 400px;
+    animation: social_fade 4s ;
+}
+
+@keyframes social_fade{
+    0% {opacity: 0; }
+    50%{opacity: 0;}
+    75%{opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+.social{
+    font-family: "komet", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 110px;
+    background-color: rgb(190,189, 189);
+    border-radius: 25px;
+    font-size: 1em;
+    margin: 10px;
+}
+#title {
+	width: 1920px;
+	height: 280px;
+	position: absolute;
+
+	transform: translate(-200px, -200px);
+    animation: title_move 5s forwards;
+}
+
+@keyframes title_move{
+    0% {top: 35%; }
+    50%{top: 35%;}
+    100% { top: 18%;}
+    
+}
+/* EVerything */
+
+.background{
+    background-color: rgb(150, 29, 33);
+}
+.background2{
+    background-color: rgb(150, 29, 33);
+    width: 100%;
+    height: 742px;
+
+}
+.background3{
+    background-color:white;
+    width: 100%;
+    height: 742px;
+    align-content: center;
+}
+.title{
+    font-family: eigerdals, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    font-size:10em;
+
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px; 
+    padding-top: 250px;
+}
+
+.dot {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(22, 21, 21);
+    border: rgb(51, 51, 51) solid 8px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 380px;
+    left: 40%;
+    margin: 50px;
+    text-align: center;
+    margin: 20px;
+   
+    font-family: eigerdals, sans-serif;
+    font-weight: 800;
+    font-style: normal;   
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;  
+
+}
+.dot2 {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(22, 21, 21);
+    border: rgb(51, 51, 51) solid 8px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    left: 40%;
+    text-align: center;
+    margin: 20px;
+    color: white;  
+    font-family: eigerdals, sans-serif;
+    font-weight: 800;
+    font-style: normal;    
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.dot:hover{
+    background-color: rgb(158, 212, 158);
+    color: rgb(51, 51, 51);
+}
+.dot2:hover{
+    background-color: rgb(158, 212, 158);
+    color: rgb(51, 51, 51);
+}
+
+/* Eboard */
+
+.eboardGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    width: 50%;
+    margin: 80px auto;
+    align-items: center;
+    
+ 
+}
+.eboardGrid2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-row: 1fr;
+    width: 80%;
+    margin: 80px auto;
+    align-items: center;
+
+}
+
+.imageCir{
+    background-color: rgb(190,189, 189);
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 25px solid rgb(190,189, 189);
+}
+
+.imageCir2{
+    background-color: rgb(190,189, 189);
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 25px solid rgb(158, 212, 158) ;
+    position: relative;
+    
+    top: 20px;
+    left: 50px;
+    z-index: 3;
+}
+.imageCir3{
+    background-color: rgb(190,189, 189);
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 25px solid rgb(190,189, 189) ;
+    position: relative;
+    right: 30px;
+    top: -40px;
+    max-width: 150%;
+}
+.eboardName{
+    font-family: komet, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.positionTitle{
+    font-family: komet, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.eboardparagraph{
+    font-family: komet, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: .9em;
+}
+
+
+/*tile links*/
+
+.linkTitleRec{
+    width: 280px;
+    height: 80px;
+    font-family: eigerdals, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    padding: 10px 40px;
+    font-size: 3em;
+    background-color:rgb(150, 29, 33);
+    margin-top: 50px;
+
+    text-align: right;
+    
+}
+
+.linkTitleRec2{
+    width: 280px;
+    height: 80px;
+    font-family: eigerdals, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    padding: 10px 40px;
+    font-size: 3em;
+    background-color:rgb(51, 51, 51);
+    position: relative;
+    top: 50px;
+    text-align: right;
+    
+}
+
+.menuBar{
+
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+    
+    height: fit-content;
+}
+.menu{
+    position: relative;
+    top: 60px;
+    left: 50%;
+    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    color: white;  
+    font-family: komet, sans-serif;
+    font-weight: 500;
+    font-style: normal;    
+    font-size: 1em;
+    text-align: left;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menuTabs {
+    z-index: 1;
+    display: inline-block;
+    padding: 16px 20px; 
+    margin: 18px 10px;
+    border-radius: 15px;
+    width: 190px;
+    text-align: center;
+    position: relative;
+    color: #ecf0f1;
+    overflow: hidden; 
+    border: 2px solid rgb(51, 51, 51);
+    background-color:rgb(51, 51, 51);
+    
+}
+
+.menuTabs:hover{
+    -webkit-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+#button{
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+#button:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-color:rgb(158, 212, 158);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#button:hover{
+    color: rgb(51, 51, 51);
+}
+
+#button:hover:before{
+    left: 0;
+}
+
+.menuTabs2{
+    background-color:rgb(222, 219, 219) ;
+    border: none;
+    z-index: 1;
+    display: inline-block;
+    padding: 16px 20px; 
+    margin: 18px 10px;
+    width: 190px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    color: rgb(51, 51, 51);
+    overflow: hidden; 
+    border: 2px solid rgb(51, 51, 51);
+}
+
+
+/* Events */
+.eventTitle{
+    font-family: komet, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.1em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 70px ;
+}
+
+.eventTitle2{
+    font-family: eigerdals, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.6em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top:50px ;
+    padding: 30px;
+    color: white;
+}
+
+.meetingTimeRec{
+    background-color: rgb(158, 212, 158);
+    text-transform: uppercase;
+    font-family: komet, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: auto;
+    font-size: 1.2em;
+    width:300px ;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    
+}
+.actRec{
+    background-color: rgb(184, 183, 183);
+    border-radius: 25px;
+    width: 35%;
+    margin: 20px auto;
+    height: auto;
+  
+    align-items: center;
+    
+    padding: 20px 40px;
+    font-family: komet, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+
+}
+
+.Rec{
+    background-color: rgb(150, 29, 33);
+    border-radius: 25px;
+    width: 48%;
+    height: auto;
+
+    margin:40px auto;
+    font-family: komet, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: .9em;
+ 
+    color: white;
+    padding: 20px;
+}
+
+.eventGrid{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 0px;
+    
+}
+.APIDAeventbox{
+    background-color: white; 
+    width: 420px;
+    height: auto; 
+    margin: 20px;
+}
+.APIDAeventTitles{
+    font-family: komet, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: .9em;
+   
+    padding: 10px;
+}
+
+.APIDAeventInfo{
+    background-color: rgb(158, 212, 158); 
+    font-family: komet, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1em;
+
+    width: 420px;
+    height: 40px;
+    padding: 10px;
+}
+.passages{
+    font-family: komet, sans-serif;
+    font-weight: 420;
+    font-style: normal;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.FundTitle{
+    font-family: eigerdals, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
+}
+.FundREC{
+    background-color: white;
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+    color: black;
+    border: 10px solid rgb(158, 212, 158);
+    margin: auto;
+}
+
+div.EventRec{
+    margin: 50px, 4px;
+    padding: 30px;
+    background-color:rgb(184, 183, 183);
+    width: 70%;
+    height: 200px;
+    overflow-x: hidden;
+    border-radius:20px;
+    text-align: justify;
+}
+
+.EventRec{
+    background-color: rgb(184, 183, 183);
+
+    margin:40px auto;
+    padding: 10px;
+
+}
+
+.PAOtriangle{
+    width: 400px;
+    height: 354px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    
+}
+.PAOtriangle2{
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    
+}
+.Merch{
+    margin: auto;
+    width: 35%;
+
+    font-family: komet, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+}
+.pointSystem{
+    background-color: rgb(150, 29, 33);
+    color: white;
+    border-radius: 25px;
+    width: 40%;
+    margin: 10px auto;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.images{
+    display: inline;
+    width: 20%; }
+.ImageGrid{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 20px; 
+  
+}
+.imageContent{
+    justify-content: center;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    display: grid;
+    margin: 0% 55%;
+
+    grid-gap: 25px;
+    grid-template-columns: 300px 400px;
+    padding-bottom: 30px;
+}
